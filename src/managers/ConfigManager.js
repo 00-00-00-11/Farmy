@@ -144,11 +144,13 @@ class ConfigManager {
 
 	getTranslation(userId, entry, args = []){
 		let lang = this.getLang(userId);
-		let lul = lang.translates[entry];
-		args.forEach(arg => {
-			lul.replace(/[%]/, arg);
+		let res = lang.translates[entry];
+		if(args){
+		    args.forEach(arg => {
+		        res.replace(/[%]/, arg);
+		    }
 		});
-		return lul;
+		return res;
 	}
 
 	// OTHERS
