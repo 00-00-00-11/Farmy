@@ -1,2 +1,2 @@
 # Farmy
-A RPG Bot written in JavaScript.
+A Game Discord Bot written in JavaScript.
