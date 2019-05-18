@@ -148,8 +148,8 @@ class ConfigManager {
 		if(args){
 		    args.forEach(arg => {
 		        res.replace(/[%]/, arg);
-		    }
-		});
+		    });
+		}
 		return res;
 	}
 
