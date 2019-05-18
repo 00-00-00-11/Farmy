@@ -4,5 +4,5 @@ node_js:
   - "node"
 
 script:
-  npm i
-  node .
+  - "npm i"
+  - "node ."
