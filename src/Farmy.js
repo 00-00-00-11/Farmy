@@ -28,10 +28,6 @@ fs.readdir("./src/commands/", (err, files) => {
 bot.on("ready", async () => {
 	console.log("Bot initialized.");
 	startUpdateTimers();
-  /*for (var i = 0; i < 100; i++) {
-    global.hdv.registerAuction("365211824661987333", "wheat", Math.random(1, 100), Math.random(1, 3000));
-    console.log(i);
-  }*/
 });
 
 bot.on("message", async message => {
