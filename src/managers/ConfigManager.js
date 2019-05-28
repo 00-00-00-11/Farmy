@@ -147,7 +147,7 @@ class ConfigManager {
 		let res = lang.translates[entry];
 		if(args){
 		    args.forEach(arg => {
-		        res.replace(/[%]/, arg);
+		        res = res.replace(/[%]/, arg);
 		    });
 		}
 		return res;
