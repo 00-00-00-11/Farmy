@@ -12,7 +12,7 @@ global.shopManager = new ShopManager();
 var HDV = require("./utils/HDV");
 global.hdv = new HDV();
 
-bot.login("token");
+bot.login(process.env.TOKEN);
 
 fs.readdir("./src/commands/", (err, files) => {
   if(err) console.log(err);
